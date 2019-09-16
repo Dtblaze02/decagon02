@@ -6,7 +6,7 @@ header {
     width: 100%;
     background-color:rgb(69, 92, 68);
     height:60px;
-    position: fixed;
+    overflow: hidden;
 } 
 header ul li a {
     color: white;
@@ -27,4 +27,13 @@ header ul {
 }
 li a:hover{
     color: rgb(176, 212, 247);
+}
+.banner{
+    background: url(../img/banner.jpg.jpg);
+    height:522px;
+    width: 100%;
+    overflow: hidden;
+}
+.mainHeader{
+    overflow: hidden;
 }
