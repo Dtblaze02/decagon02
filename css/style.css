@@ -37,3 +37,16 @@ li a:hover{
 .mainHeader{
     overflow: hidden;
 }
+.suggested_destination{
+    padding: 10px;
+    width:100%;
+    margin:50px; 
+}
+.suggested_destination h1, p {
+    text-align: center;
+    width: 100%;
+}
+.suggested_destination p{
+    padding-top:20px;
+    font-size: 20px;
+}
