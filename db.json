@@ -1,0 +1,9 @@
+{
+    "hotels": [
+      { "id": 1, "name of hotel": "" , "state": "Lagos", "location": "Ikeja" }
+    ],
+    "feedbacks": [
+      { "id": 1, "comment": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
