@@ -47,8 +47,9 @@
     
     <div class="banner">
             <main class="main-content">
-                <p class="regMessage"></p>
-            <div class="forms">
+                <p  style ="color:red; font-weight:bold;" class="regMessage"></p>
+             <div class="forms">
+                    <div class="closeBtn">&Cross;</div>
                     <form class="regForm" method="GET">
                       <input
                         type="text"
@@ -74,7 +75,24 @@
                         placeholder="password"
                       /><br><br>
                       <button class="regSubmitBtn">Register</button>
-                    </form>
+                    </form><br><br>
+                    <form class="loginForm">
+                            <p class="regMessage"></p>
+                            <div class="closeLoginBtn">&Cross;</div>
+                            <input
+                              type="text"
+                              name="username"
+                              id="username"
+                              placeholder="Username"
+                            /><br><br>
+                            <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              placeholder="password"
+                            /><br><br>
+                            <button class="loginSubmitBtn">login</button>
+                          </form>
                 </main>
                 </div>
     </div>
@@ -106,7 +124,6 @@
         </div>
     </footer>
     <script src="./js/jquery.js"></script>
-    <script src="./js/database.js"></script>
-    
+    <script src="./js/database.js"></script>  
 </body>
 </html>

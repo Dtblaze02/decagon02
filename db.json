@@ -13,14 +13,25 @@
       "email": "datrailblazerlives@yahoo.com",
       "password": "rgcvmhvh",
       "id": 2
+    },
+    {
+      "fullname": "vtftuf",
+      "username": "jhuhhu",
+      "email": "kjbibui",
+      "password": "nbbb",
+      "id": 3
     }
   ],
   "hotels": [
     {
       "id": 1,
       "name of hotel": "",
-      "state": "Lagos",
-      "location": "Ikeja"
+      "email address":"",
+      "mobile number":"",
+      "website":"",
+      "location": "Lagos",
+      "city": "Ikeja",
+      "full address":""
     }
   ],
   "feedbacks": [

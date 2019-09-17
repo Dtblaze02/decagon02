@@ -1,4 +1,19 @@
-$('.regSubmitBtn').click(function(event) {
+$(document).ready(function() {
+  //Over sabi Effect
+  $('.registerBtn').click(function() {
+    $('.regForm').fadeIn();
+  });
+  $('.closeBtn').click(function() {
+    $('.regForm').fadeOut();
+  });
+  $('.loginBtn').click(function() {
+    $('.loginForm').fadeIn();
+  });
+  $('.closeLoginBtn').click(function() {
+    $('.loginForm').fadeOut();
+  });
+  //Registration Function
+  $('.regSubmitBtn').click(function(event) {
     event.preventDefault();
     const fullname = $('#fullname').val();
     const username = $('#username').val();
@@ -44,3 +59,44 @@ $('.regSubmitBtn').click(function(event) {
       },
     });
   });
+  //Login Function
+  $('.loginSubmitBtn').click(function(event) {
+    event.preventDefault();
+    const passwordLogin = $('#passwordLogin').val();
+    const emailLogin = $('#emailLogin').val();
+    if (!passwordLogin || !emailLogin) {
+      $('.regMessage').html('Kindly fill in all fields');
+      return;
+    }
+    //Check if the user is in the database
+    $.ajax({
+      method: 'GET',
+      url: `http://localhost:3000/users?email=${emailLogin}&password=${passwordLogin}`,
+      data: {
+        email: emailLogin,
+        password: passwordLogin,
+      },
+      beforeSend: function() {
+        $('.regMessage').html('Loading....');
+      },
+      success: function(response) {
+        if (response.length) {
+          $('.regMessage').html('Login sucessful');
+          $('.checkLogin').html('You are logged in');
+          localStorage.setItem('email', emailLogin);
+          //redirect to home page if the login is successfull
+          window.location.assign('index.html');
+        } else {
+          $('.regMessage').html('Username or password Incorrect');
+        }
+      },
+    });
+  });
+  //Logout Function
+  $('.logoutBtn').click(function() {
+    //clear the localstorage and redirect to signup page
+    localStorage.clear();
+    $('.checkLogin').html('Kindly login');
+    window.location.assign('signup.html');
+  });
+});
