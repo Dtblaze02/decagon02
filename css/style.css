@@ -58,3 +58,25 @@ li a:hover{
 img{
     padding-right:0px 50px 0px 50px; 
 }
+.forms{
+    margin-top: 60px;
+    width: 60%;
+    padding: 20px;
+}
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.regSubmitBtn {
+    background: green;
+    color: white;
+    border-radius: 4px;
+    padding:5px;
+}
+.loginSubmitBtn {
+    background: green;
+    color: white;
+    border-radius: 4px;
+    padding:5px;
+}
