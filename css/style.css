@@ -7,7 +7,6 @@ header {
     background-color:rgb(69, 92, 68);
     height:60px;
     overflow: hidden;
-    position: fixed;
 } 
 header ul li a {
     color: white;
@@ -54,12 +53,13 @@ li a:hover{
     padding: 50px 0px 50px 0px;
     width: 100%;
     background: grey;
+    border:2px solid;
 }
 img{
     padding-right:0px 50px 0px 50px; 
+    border: 1px solid;
 }
 .forms{
-    margin-top: 60px;
     width: 60%;
     padding: 20px;
 }
@@ -75,6 +75,12 @@ input, textarea {
     padding:5px;
 }
 .loginSubmitBtn {
+    background: green;
+    color: white;
+    border-radius: 4px;
+    padding:5px;
+}
+.listSubmitBtn {
     background: green;
     color: white;
     border-radius: 4px;
