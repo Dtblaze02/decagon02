@@ -1,9 +1,33 @@
 {
-    "hotels": [
-      { "id": 1, "name of hotel": "" , "state": "Lagos", "location": "Ikeja" }
-    ],
-    "feedbacks": [
-      { "id": 1, "comment": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "users": [
+    {
+      "id": 1,
+      "fullname": "",
+      "email": "",
+      "username": "",
+      "password": ""
+    },
+    {
+      "fullname": "ddd",
+      "username": "dtblaze",
+      "email": "sadiqaliyu89@gmail.com",
+      "password": "jgf7t80y",
+      "id": 2
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "name of hotel": "",
+      "state": "Lagos",
+      "location": "Ikeja"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 1,
+      "comment": "some comment",
+      "postId": 1
+    }
+  ]
+}
