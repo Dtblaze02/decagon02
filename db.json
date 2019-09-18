@@ -20,25 +20,28 @@
       "email": "kjbibui",
       "password": "nbbb",
       "id": 3
-    },
-    {
-      "fullname": "hfd786f",
-      "username": "gyyg",
-      "email": "kbgug@kjirhi",
-      "password": "1231w5312",
-      "id": 4
     }
   ],
   "hotels": [
     {
-      "id": 1,
       "hotelname": "",
-      "email": "",
+      "email": "datrailblazerlives@yahoo.com",
       "mobile": "",
       "website": "",
       "location": "Lagos",
       "city": "Ikeja",
-      "address": ""
+      "address": "",
+      "id": 1
+    },
+    {
+      "hotelname": "khuh",
+      "email": "datrailblazerlives@yahoo.com",
+      "mobile": "6890909",
+      "website": "hbkl",
+      "location": "hvywvyigfew",
+      "city": "hhgwygeiy7",
+      "address": "dfghjk",
+      "id": 2
     }
   ],
   "feedbacks": [

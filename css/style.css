@@ -59,6 +59,7 @@ img{
 }
 .forms{
     width: 60%;
+    margin-left: 0px;
     padding: 20px;
 }
 input, textarea {
@@ -87,8 +88,5 @@ input, textarea {
 #pics{
     margin: auto;
     width: 80%;
-    padding-left: 20px;
-}
-#pics2{
-    width: auto;
+    padding:5px;
 }

@@ -17,7 +17,7 @@ $(document).ready(function() {
     //Make get request to check if the user already exist
     $.ajax({
       method: 'GET',
-      url: `http://localhost:3000/hotels?email=${email}`,
+      url: `http://localhost:3000/hotels?hotelname=${hotelname}`,
       data: {
         email,
       },
@@ -26,7 +26,7 @@ $(document).ready(function() {
       },
       success: function(response) {
         if (response.length) {
-          $('.regMessage').html('User already exist');
+          $('.regMessage').html('Hotel with the same name already exists, check Hotel name and try again');
         } else {
           //Submit the user data if the user does not exist
           $.ajax({
@@ -39,10 +39,10 @@ $(document).ready(function() {
               website,
               location,
               city,
-              address,
+              address
             },
             beforeSend: function() {
-              $('.regMessage').html('Loading....');
+              $('.regMessage').html('Loading1...');
             },
             success: function() {
               $('.regMessage').html('Registration Successfull');
@@ -50,10 +50,18 @@ $(document).ready(function() {
               //if sign up successful
               window.location.assign('index.html');
               return;
-            },
+            }
           });
         }
-      },
+     
+      }
+
+
+
     });
-});
-})
+
+
+});  //submits
+
+
+})//ready
