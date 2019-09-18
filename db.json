@@ -20,18 +20,25 @@
       "email": "kjbibui",
       "password": "nbbb",
       "id": 3
+    },
+    {
+      "fullname": "hfd786f",
+      "username": "gyyg",
+      "email": "kbgug@kjirhi",
+      "password": "1231w5312",
+      "id": 4
     }
   ],
   "hotels": [
     {
       "id": 1,
-      "name of hotel": "",
-      "email address":"",
-      "mobile number":"",
-      "website":"",
+      "hotelname": "",
+      "email": "",
+      "mobile": "",
+      "website": "",
       "location": "Lagos",
       "city": "Ikeja",
-      "full address":""
+      "address": ""
     }
   ],
   "feedbacks": [
