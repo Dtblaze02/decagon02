@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.regSubmitBtn').click(function(event) {
     event.preventDefault();
     const hotelname = $('#hotelname').val();
     const email = $('#email').val();
@@ -55,3 +56,4 @@ $(document).ready(function() {
       },
     });
 });
+})
