@@ -7,8 +7,8 @@ $(document).ready(function() {
             .append($("<td>").append(hotels.city))
             .append($("<td>").append(hotels.location))
             .append($("<td>").append(hotels.mobile))
-            .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: green; padding:2px;'>Edit</button>"))
-            .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: red; padding:2px;'>Delete</button>")))
+            .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: green; padding:2px;border-radius:10px;'>Edit</button>"))
+            .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: red; padding:2px; border-radius:10px;'>Delete</button>")))
         });
     });
 })

@@ -21,11 +21,12 @@ $('.loginSubmitBtn').click(function(event) {
     },
     success: function(response) {
       if (response.length) {
-        $('.regMessage').html('Login sucessful');
-        $('.checkLogin').html('You are logged in');
+        $('.regMessage').html('welcome back');
+        $('.hotelTable').fadeIn();
+        $('.loginForm').fadeOut();
         localStorage.setItem('username', username);
         //redirect to home page if the login is successfull
-        window.location.assign('index.html');
+        //window.location.assign('index.html');
       } else {
         $('.regMessage').html('Username or password Incorrect');
       }
