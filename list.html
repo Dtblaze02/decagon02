@@ -12,7 +12,7 @@
         <header>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="list.html">Check listings</a></li>
+                <li><a href="list.html" id="lists">Check listings</a></li>
                 <li><a href="addhotel.html">Add Hotel</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About Us</a></li>
@@ -23,7 +23,18 @@
     </div>
 
     
-    <div class="banner"> </div>
+    <div class="banner">
+        <input type="text" id="#form-control" class="form-control search" placeholder="search hotels">
+        <table id="hotelTable">
+            <tr>
+                <th>Hotel name</th>
+                <th>Hotel city</th>
+                <th>Hotel state</th>
+            </tr>
+        </table>
+
+       </div>
+    
     <div class="suggested_destination">
         <h1>Suggested Destinations</h1>
         <p>see most visited destinations</p>
@@ -51,7 +62,8 @@
                  </div>
         </div>
     <script src="./js/jquery.js"></script>
-    <script src="./js/signup.js"></script> 
+    <script src="./js/lists.js"></script> 
     <script src="./search.js"></script>
+    
 </body>
 </html>

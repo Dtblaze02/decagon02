@@ -20,11 +20,25 @@
       "email": "kjbibui",
       "password": "nbbb",
       "id": 3
+    },
+    {
+      "fullname": "sadiq",
+      "username": "sadiq",
+      "email": "datrailblaives@yahoo.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "fullname": "sadiq",
+      "username": "tope12",
+      "email": "datrailbrlives@yahoo.com",
+      "password": "l'l",
+      "id": 5
     }
   ],
   "hotels": [
     {
-      "hotelname": "",
+      "hotelname": "dfrhyt",
       "email": "datrailblazerlives@yahoo.com",
       "mobile": "",
       "website": "",
@@ -42,6 +56,16 @@
       "city": "hhgwygeiy7",
       "address": "dfghjk",
       "id": 2
+    },
+    {
+      "hotelname": "eko hotel",
+      "email": "fghjkl",
+      "mobile": "3456789",
+      "website": "fghjkl",
+      "location": "Lagos",
+      "city": "lagos island",
+      "address": "fghjkl",
+      "id": 3
     }
   ],
   "feedbacks": [

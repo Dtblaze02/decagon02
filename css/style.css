@@ -7,23 +7,24 @@ header {
     background-color:rgb(69, 92, 68);
     height:60px;
     overflow: hidden;
+    position:fixed;
 } 
 header ul li a {
-    color: white;
+    color: rgb(253, 253, 253);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 header ul li  {
     list-style: none;
-    float: left;
     margin-right: 20px;
-    
+    display: inline;
 }
 header ul {
     float: right;
     margin-top: 20px;
-    margin-right: 60px;  
+    margin-right: 60px;
 }
 li a:hover{
     color: rgb(176, 212, 247);
@@ -33,6 +34,8 @@ li a:hover{
     height:522px;
     width: 100%;
     overflow: hidden;
+    clear: both;
+    margin-top: 60px;
 }
 .mainHeader{
     overflow: hidden;
@@ -51,9 +54,9 @@ li a:hover{
 }
 .available_hotels{
     width: 100%;
+    background-color: rgb(153, 189, 177);
 }
 img{ 
-    border: 1px solid;
     border-radius: 20px;
     margin:15px;
 }
@@ -89,4 +92,27 @@ input, textarea {
     margin: auto;
     width: 80%;
     padding:5px;
+}
+
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 35%;
+    padding: 5px;
+    color: rgb(10, 10, 10);
+    background: rgb(48, 197, 73);
+}
+table{
+    margin-left: 10px;
+}
+th, td{
+    text-align: center;
+}
+td{
+    border: 1px solid black; 
+}
+.form-control {
+    width: 10%;
+    padding:5px;
+    margin:10px 0px 10px 10px;
 }

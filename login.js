@@ -1,13 +1,35 @@
 $(document).ready(function() {
-    //Check if there is any user data stored in the local storage
-    //because user data is stored in localstorage at login
-    let user = window.localStorage.getItem('email');
-    if (!user) {
-      //If no user data, redirect to signup/login page, anyone you like
-      $('.login').html('Kindly Log in');
-      window.location.assign('signup.html');
-    } else {
-      //Else prompt the user he is logged in
-      $('.login').html('You are logged in');
-    }
+//Login Function
+$('.loginSubmitBtn').click(function(event) {
+  event.preventDefault();
+  const username = $('#username').val();
+  const password = $('#password').val();
+  if (!username || !password) {
+    $('.regMessage').html('Kindly fill in all fields');
+    return;
+  }
+  //Check if the user is in the database
+  $.ajax({
+    method: 'GET',
+    url: `http://localhost:3000/users?username=${username}`,
+    data: {
+      username,
+      password,
+    },
+    beforeSend: function() {
+      $('.regMessage').html('Loading...');
+    },
+    success: function(response) {
+      if (response.length) {
+        $('.regMessage').html('Login sucessful');
+        $('.checkLogin').html('You are logged in');
+        localStorage.setItem('username', username);
+        //redirect to home page if the login is successfull
+        window.location.assign('index.html');
+      } else {
+        $('.regMessage').html('Username or password Incorrect');
+      }
+    },
   });
+});
+})
