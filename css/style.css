@@ -94,7 +94,7 @@ input, textarea {
     padding:5px;
 }
 
-table, th{
+#hotelTable, table, th{
     border: 1px solid black;
     border-collapse: collapse;
     width: 35%;
@@ -102,13 +102,13 @@ table, th{
     color: rgb(10, 10, 10);
     background: rgb(48, 197, 73);
 }
-table{
+#hotelTable, table{
     margin-left: 10px;
 }
-th, td{
+#hotelTable, th, td{
     text-align: center;
 }
-td{
+#hotelTable, td{
     border: 1px solid black; 
 }
 .form-control {
@@ -121,4 +121,26 @@ td{
     color: white;
     border-radius: 4px;
     padding:5px;
+}
+.right{
+    text-align: center;
+    width:33%;
+    float:right;
+}
+.left{
+    text-align: center;
+    width:33%;
+    float:left;
+}
+.middle{
+    text-align: center;
+    width:34%;
+    float:right;
+}
+.clear{
+    clear:both;
+}
+.footer_container p a{
+    text-decoration: none;
+    font: green;
 }
