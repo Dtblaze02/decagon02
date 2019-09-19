@@ -54,7 +54,7 @@ li a:hover{
 }
 .available_hotels{
     width: 100%;
-    background-color: rgb(153, 189, 177);
+    background-color: rgb(200, 243, 246);
 }
 img{ 
     border-radius: 20px;
@@ -115,4 +115,10 @@ td{
     width: 10%;
     padding:5px;
     margin:10px 0px 10px 10px;
+}
+.delete {
+    background:red;
+    color: white;
+    border-radius: 4px;
+    padding:5px;
 }

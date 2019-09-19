@@ -11,11 +11,11 @@
     <div class="mainHeader">
         <header>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="list.html">Check listings</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Check listings</a></li>
                 <li><a href="addhotel.html">Add Hotel</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="delete.html">About Us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign up</a></li>
             </ul>
@@ -23,19 +23,40 @@
     </div>
 
     
-    <div class="banner"> </div>
+    <div class="banner">
+            <div class="forms">
+            <main class="main-content">
+                <p  style ="color:red; font-weight:bold;" class="regMessage"></p><br>
+                <form class="loginForm">
+                  <input
+                    type="text"
+                    name="hotelname"
+                    id="hotelname"
+                    placeholder="Enter the name of your Hotel"
+                  /><br><br>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  /><br><br>
+                  <button class="delete" type="submit">Delete Hotel</button>
+                </form>
+            </main>
+            </div>
+    </div>
     <div class="suggested_destination">
         <h1>Suggested Destinations</h1>
         <p>see most visited destinations</p>
     </div>
     <div class="available_hotels">
         <div id="pics">
-            <a href="#"><img src ="img/hotelpic1.jpg"/></a>
-            <a href="#"> <img src ="img/hotelpic2.jpg"/></a>
-            <a href="#"><img src ="img/hotelpic3.jpg"/></a> 
-            <a href="#"> <img src ="img/hotelpic4.jpg"/></a> 
-            <a href="#"><img src ="img/hotelpic5.jpg"/></a>
-            <a href="#"><img src ="img/hotelpic6.jpg"/></a>
+            <img src ="img/hotelpic1.jpg"/>
+            <img src ="img/hotelpic2.jpg"/> 
+            <img src ="img/hotelpic3.jpg"/> 
+            <img src ="img/hotelpic4.jpg"/> 
+            <img src ="img/hotelpic5.jpg"/>
+            <img src ="img/hotelpic6.jpg"/>
         </div><br><br>
     </div><hr><br><br>
           <div class="footer_info">
@@ -51,7 +72,8 @@
                  </div>
         </div>
     <script src="./js/jquery.js"></script>
-    <script src="./js/signup.js"></script> 
-    <script src="./search.js"></script>
+    <script src="./js/delete.js"></script>
+      
+    
 </body>
 </html>

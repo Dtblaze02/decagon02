@@ -26,7 +26,7 @@ function(data){
         $('#hotelTable').append($("<tr>")
         .append($("<td>").append(hotels.hotelname))
         .append($("<td>").append(hotels.city))
-        .append($("<td>").append(hotels.location)));
+        .append($("<td>").append(hotels.location)))
     });
 // })
 // .done(function(){
