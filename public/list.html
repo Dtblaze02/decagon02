@@ -11,8 +11,8 @@
     <div class="mainHeader">
         <header>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Check listings</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list.html">Check listings</a></li>
                 <li><a href="addhotel.html">Add Hotel</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About Us</a></li>
@@ -24,27 +24,18 @@
 
     
     <div class="banner">
-            <div class="forms">
-            <main class="main-content">
-                <p  style ="color:red; font-weight:bold;" class="regMessage"></p><br>
-                <form class="loginForm">
-                  <input
-                    type="text"
-                    name="hotelname"
-                    id="hotelname"
-                    placeholder="Enter the name of your Hotel"
-                  /><br><br>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                  /><br><br>
-                  <button class="delete" type="submit">Delete Hotel</button>
-                </form>
-            </main>
-            </div>
-    </div>
+        <input type="text" id="#form-control" class="form-control search" placeholder="search hotels">
+        <table id="hotelTable">
+            <tr>
+                <th>Hotel name</th>
+                <th>Hotel city</th>
+                <th>Hotel state</th>
+                <th>Mobile Number</th>
+            </tr>
+        </table>
+
+       </div>
+    
     <div class="suggested_destination">
         <h1>Suggested Destinations</h1>
         <p>see most visited destinations</p>
@@ -72,8 +63,8 @@
                  </div>
         </div>
     <script src="./js/jquery.js"></script>
-    <script src="./js/delete.js"></script>
-      
+    <script src="./js/lists.js"></script> 
+    <script src="./js/search.js"></script>
     
 </body>
 </html>
