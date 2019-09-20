@@ -8,7 +8,22 @@ $(document).ready(function() {
             .append($("<td>").append(hotels.location))
             .append($("<td>").append(hotels.mobile))
             .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: green; padding:2px;border-radius:10px;'>Edit</button>"))
-            .append($("<td>").append("<button  type = 'submit' style = 'color:white; background: red; padding:2px; border-radius:10px;'>Delete</button>")))
+            .append($("<td>").append("<button  type = 'submit' data-id ='{{id}}' class= 'remove' style = 'color:white; background: red; padding:2px; border-radius:10px;'>Delete</button>")))
         });
     });
-})
+});
+
+
+
+
+
+    $('#hotelTable').delegate('.remove','click', function(){
+
+    $.ajax({
+        type: 'DELETE',
+        url: 'http://localhost:3000/hotels' + $('#hotelTable').attr('data-id'),
+        success: function(){
+        
+        }
+    });
+});
